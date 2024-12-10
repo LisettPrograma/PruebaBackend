@@ -1,0 +1,37 @@
+@url = http://localhost:3000
+
+
+
+GET {{url}}/gatito
+
+###
+
+GET {{url}}/gatito/porId/6389
+
+###
+
+POST {{url}}/gatito/agregar
+Content-Type: application/json
+
+{
+    "nombre": "Luna",
+    "raza": "Siames",
+    "edad": "3",
+    "sexo": "hembra"
+}
+
+###
+
+PUT {{url}}/gatito/actualizar/3697
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "raza": "egipcia",
+    "edad": "14",
+    "sexo": "macho"
+}
+
+###
+
+DELETE {{url}}/gatito/delete/8976
